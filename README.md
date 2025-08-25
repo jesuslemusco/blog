@@ -19,7 +19,7 @@ pip install -r requirements.txt
 ```
 THEME_ROOT=themes/personal/
 
-npx @tailwindcss/cli -i $THEME_ROOT/static/css/input.css -o $THEME_ROOT/static/css/output.css --watch
+npx @tailwindcss/cli -i themes/personal/static/css/input.css -o themes/personal//static/css/output.css --watch
 make regenerate
 pelican --listen 
 ```
