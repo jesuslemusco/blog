@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ SITENAME }}</title>
+    <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/output.css" />
+</head>
+<body>
+    <header>
+        <h1><a href="{{ SITEURL }}">{{ SITENAME }}</a></h1>
+    </header>
+
+    <main>
+        {% block content %}
+        <!-- Page-specific content will go here -->
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2025 {{ AUTHOR }}</p>
+    </footer>
+</body>
+</html>

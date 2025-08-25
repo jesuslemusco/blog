@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2 class="text-4xl">Blog Posts</h2>
+    <ul>
+        {% for article in articles %}
+            <li>
+                <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+                <p>Published on: {{ article.locale_date }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

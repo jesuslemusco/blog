@@ -1,0 +1,27 @@
+{
+  "name": "personal-blog",
+  "version": "1.0.0",
+  "description": "tools:  - Python 3.13 - Pelican - NodeJs v24.6.0 - npm 11.5.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesuslemusco/personal-blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/jesuslemusco/personal-blog/issues"
+  },
+  "homepage": "https://github.com/jesuslemusco/personal-blog#readme",
+  "devDependencies": {
+    "tailwindcss": "^4.1.12"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.12"
+  }
+}

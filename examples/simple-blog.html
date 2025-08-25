@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog – Jesus Lemus</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://placehold.co/32x32/97B136/000000?text=JL" type="image/x-icon" />
+
+  <meta name="description" content="The personal portfolio and blog of Jesus Lemus, a passionate DevOps Engineer." />
+  <meta name="theme-color" content="#000000" />
+
+  <style>
+    :root {
+      --bg-primary: #ffffff;
+      --bg-secondary: #f8f8f8;
+      --text-primary: #111827;
+      --text-secondary: #4b5563;
+      --border-color: #e0e0e0;
+      --dark-green: #598040;
+      --light-green: #97b136;
+    }
+    .dark {
+      --bg-primary: #000000;
+      --bg-secondary: #111111;
+      --text-primary: #e5e7eb;
+      --text-secondary: #9ca3af;
+      --border-color: #4b5563;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-secondary);
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .bg-primary { background-color: var(--bg-primary); }
+    .bg-secondary { background-color: var(--bg-secondary); }
+    .text-primary { color: var(--text-primary); }
+    .text-secondary { color: var(--text-secondary); }
+    .border-custom { border-color: var(--border-color); }
+
+    .text-gradient {
+      background: linear-gradient(90deg, var(--light-green), var(--dark-green));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .btn-secondary {
+      background-color: transparent;
+      border: 2px solid var(--border-color);
+      color: var(--text-primary);
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+    .btn-secondary:hover {
+      background-color: var(--bg-secondary);
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body class="antialiased">
+  <!-- Header -->
+  <header class="relative w-full">
+    <nav class="static top-0 left-0 w-full z-50 border-b border-custom bg-primary/90 backdrop-blur">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          <a href="index.html" class="text-3xl font-extrabold tracking-tight" aria-label="Home">
+            <span class="text-primary">Jesus </span><span class="text-gradient">Lemus</span>
+          </a>
+          <div class="flex items-center space-x-6">
+            <ul class="hidden md:flex items-center space-x-6 text-sm font-medium">
+              <li><a href="index.html#blog" class="text-secondary hover:text-primary transition-colors">Blog</a></li>
+              <li><a href="index.html#contact" class="text-secondary hover:text-primary transition-colors">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="text-secondary hover:text-primary focus:outline-none" aria-label="Toggle theme">
+              <svg id="theme-toggle-dark-icon" class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+              <svg id="theme-toggle-light-icon" class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zM3 11a1 1 0 100-2H2a1 1 0 100 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="w-full">
+    <!-- Blog Section -->
+    <section id="blog" class="py-20 lg:py-28 bg-primary px-4 sm:px-6 lg:px-8">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-14">
+          <h1 class="text-4xl md:text-5xl font-extrabold text-primary tracking-tighter">The Blog</h1>
+          <p class="mt-4 text-lg text-secondary">A collection of thoughts on cloud, automation, and culture.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Blog Post 1 -->
+          <article class="rounded-xl overflow-hidden bg-secondary border border-custom">
+            <img src="https://images.unsplash.com/photo-1618477388954-7852f32655ec?q=80&w=800&auto=format&fit=crop" alt="Abstract code on a screen" class="w-full h-48 object-cover" />
+            <div class="p-6">
+              <p class="text-sm text-secondary">July 15, 2024</p>
+              <h3 class="mt-2 text-xl font-bold text-primary">5 Common Mistakes in CI/CD Pipelines</h3>
+              <p class="mt-2 text-secondary">How to avoid the pitfalls that slow down your delivery and introduce risk.</p>
+              <a href="blog-entry.html" class="mt-4 inline-block text-sm font-semibold text-gradient">Read more →</a>
+            </div>
+          </article>
+          <!-- Blog Post 2 -->
+          <article class="rounded-xl overflow-hidden bg-secondary border border-custom">
+            <img src="https://images.unsplash.com/photo-1580894908361-967195033215?q=80&w=800&auto=format&fit=crop" alt="Cloud cost dashboard" class="w-full h-48 object-cover" />
+            <div class="p-6">
+              <p class="text-sm text-secondary">June 28, 2024</p>
+              <h3 class="mt-2 text-xl font-bold text-primary">A Practical Guide to Cloud Cost Optimization</h3>
+              <p class="mt-2 text-secondary">Strategies for reducing your AWS bill without sacrificing performance.</p>
+              <a href="#" class="mt-4 inline-block text-sm font-semibold text-gradient">Read more →</a>
+            </div>
+          </article>
+          <!-- Blog Post 3 -->
+          <article class="rounded-xl overflow-hidden bg-secondary border border-custom">
+            <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=800&auto=format&fit=crop" alt="Kubernetes logo on a laptop" class="w-full h-48 object-cover" />
+            <div class="p-6">
+              <p class="text-sm text-secondary">May 10, 2024</p>
+              <h3 class="mt-2 text-xl font-bold text-primary">Why You Should Use Infrastructure as Code</h3>
+              <p class="mt-2 text-secondary">An introduction to Terraform and the benefits of managing infrastructure programmatically.</p>
+              <a href="#" class="mt-4 inline-block text-sm font-semibold text-gradient">Read more →</a>
+            </div>
+          </article>
+           <!-- Blog Post 4 -->
+           <article class="rounded-xl overflow-hidden bg-secondary border border-custom">
+            <img src="https://images.unsplash.com/photo-1517694712202-1428bc648c2a?q=80&w=800&auto=format&fit=crop" alt="Developer working on a laptop" class="w-full h-48 object-cover" />
+            <div class="p-6">
+              <p class="text-sm text-secondary">April 22, 2024</p>
+              <h3 class="mt-2 text-xl font-bold text-primary">The DevOps Culture Shift</h3>
+              <p class="mt-2 text-secondary">It's not just about tools, it's about collaboration and mindset.</p>
+              <a href="#" class="mt-4 inline-block text-sm font-semibold text-gradient">Read more →</a>
+            </div>
+          </article>
+          <!-- Blog Post 5 -->
+          <article class="rounded-xl overflow-hidden bg-secondary border border-custom">
+            <img src="https://images.unsplash.com/photo-1526374965328-5f61d4dc18c5?q=80&w=800&auto=format&fit=crop" alt="Green binary code on a screen" class="w-full h-48 object-cover" />
+            <div class="p-6">
+              <p class="text-sm text-secondary">March 15, 2024</p>
+              <h3 class="mt-2 text-xl font-bold text-primary">Getting Started with Docker</h3>
+              <p class="mt-2 text-secondary">A beginner's guide to containerization and why it matters.</p>
+              <a href="#" class="mt-4 inline-block text-sm font-semibold text-gradient">Read more →</a>
+            </div>
+          </article>
+          <!-- Blog Post 6 -->
+          <article class="rounded-xl overflow-hidden bg-secondary border border-custom">
+            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=800&auto=format&fit=crop" alt="Team collaborating around a table" class="w-full h-48 object-cover" />
+            <div class="p-6">
+              <p class="text-sm text-secondary">February 29, 2024</p>
+              <h3 class="mt-2 text-xl font-bold text-primary">Monitoring and Observability Explained</h3>
+              <p class="mt-2 text-secondary">Understanding the difference and why you need both.</p>
+              <a href="#" class="mt-4 inline-block text-sm font-semibold text-gradient">Read more →</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Pagination -->
+        <div class="mt-16 flex justify-between items-center">
+            <a href="#" class="btn-secondary px-6 py-2 rounded-lg">&larr; Newer Posts</a>
+            <a href="#" class="btn-secondary px-6 py-2 rounded-lg">Older Posts &rarr;</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-custom bg-secondary">
+    <div class="max-w-5xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row justify-between items-center">
+        <p class="text-sm text-secondary">&copy; <span id="year"></span> Jesus Lemus. All Rights Reserved.</p>
+        <div class="flex space-x-6 mt-4 sm:mt-0">
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener" class="text-secondary hover:text-primary transition-colors" aria-label="LinkedIn">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H6.34C3.963 1 2 2.986 2 5.333v13.333C2 21.018 3.963 23 6.34 23h11.328c2.377 0 4.332-1.982 4.332-4.333V5.333C22 2.986 20.045 1 17.668 1z" /></svg>
+          </a>
+          <a href="mailto:contact@jesuslemus.co" class="text-secondary hover:text-primary transition-colors" aria-label="Email">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.92.613 2.162.92 3.403.92s2.483-.307 3.403-.92l6.598-3.185c.025-.012.05-.023.076-.032V4.5A1.5 1.5 0 0 0 19.5 3h-15Z" /><path d="M1 6.868v10.637A1.5 1.5 0 0 0 2.5 19h15a1.5 1.5 0 0 0 1.5-1.5V6.868L14.402 10.05c-1.15.767-2.654 1.15-4.152 1.15s-3.002-.383-4.152-1.15L1 6.868Z" /></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Theme Toggle Logic
+      const themeToggleButton = document.getElementById('theme-toggle');
+      const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+      const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+
+      if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+        themeToggleLightIcon.classList.remove('hidden');
+      } else {
+        document.documentElement.classList.remove('dark');
+        themeToggleDarkIcon.classList.remove('hidden');
+      }
+
+      themeToggleButton.addEventListener('click', () => {
+        themeToggleDarkIcon.classList.toggle('hidden');
+        themeToggleLightIcon.classList.toggle('hidden');
+        if (localStorage.getItem('color-theme')) {
+          if (localStorage.getItem('color-theme') === 'light') {
+            document.documentElement.classList.add('dark');
+            localStorage.setItem('color-theme', 'dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem('color-theme', 'light');
+          }
+        } else {
+          if (document.documentElement.classList.contains('dark')) {
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem('color-theme', 'light');
+          } else {
+            document.documentElement.classList.add('dark');
+            localStorage.setItem('color-theme', 'dark');
+          }
+        }
+      });
+
+      // Footer year
+      const y = document.getElementById('year'); if (y) y.textContent = new Date().getFullYear();
+    });
+  </script>
+</body>
+</html>
