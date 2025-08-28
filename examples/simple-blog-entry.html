@@ -8,10 +8,10 @@
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Google Fonts: Inter -->
+  <!-- Google Fonts: Inter for Headings, Merriweather for Body -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
 
   <!-- Favicon -->
   <link rel="icon" href="https://placehold.co/32x32/97B136/000000?text=JL" type="image/x-icon" />
@@ -37,7 +37,7 @@
       --border-color: #4b5563;
     }
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Inter', sans-serif; /* Default font */
       background-color: var(--bg-primary);
       color: var(--text-secondary);
       transition: background-color 0.3s, color 0.3s;
@@ -68,13 +68,16 @@
     
     /* Custom styles for prose content */
     .prose {
+        font-family: 'Merriweather', serif; /* Serif font for body text */
         color: var(--text-secondary);
+        font-size: 1.125rem; /* Slightly larger for readability */
     }
     .prose p {
         margin-bottom: 1.5em;
-        line-height: 1.7;
+        line-height: 1.8; /* Increased line height for serif */
     }
     .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
+        font-family: 'Inter', sans-serif; /* Keep headings sans-serif */
         color: var(--text-primary);
     }
     .prose a {

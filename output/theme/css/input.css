@@ -1,13 +1,84 @@
 @import "tailwindcss";
 
-body {
-    font-family: sans-serif;
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 0 20px;
-    line-height: 1.6;
+:root {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8f8f8;
+    --text-primary: #111827;
+    --text-secondary: #4b5563;
+    --border-color: #e0e0e0;
+    --dark-green: #598040;
+    --light-green: #97b136;
 }
-header h1 a {
-    text-decoration: none;
-    color: #333;
+.dark {
+    --bg-primary: #000000;
+    --bg-secondary: #111111;
+    --text-primary: #e5e7eb;
+    --text-secondary: #9ca3af;
+    --border-color: #4b5563;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-secondary);
+    transition: background-color 0.3s, color 0.3s;
+}
+.bg-primary { background-color: var(--bg-primary); }
+.bg-secondary { background-color: var(--bg-secondary); }
+.text-primary { color: var(--text-primary); }
+.text-secondary { color: var(--text-secondary); }
+.border-custom { border-color: var(--border-color); }
+
+.text-gradient {
+    background: linear-gradient(90deg, var(--light-green), var(--dark-green));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.btn-primary {
+    background-color: var(--light-green);
+    color: #ffffff;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+.btn-primary:hover {
+    background-color: var(--dark-green);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(151, 177, 54, 0.25);
+}
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid var(--border-color);
+    color: var(--text-primary);
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.btn-secondary:hover {
+    background-color: var(--bg-secondary);
+    transform: translateY(-2px);
+}
+
+/* Mobile carousel for blog cards */
+@media (max-width: 767px) {
+    .h-scroll {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    }
+    .h-scroll::-webkit-scrollbar { display: none; }
+    .card-snap { width: 85%; flex-shrink: 0; scroll-snap-align: center; }
+}
+
+.hero-grid {
+    background-color: var(--bg-primary);
+    background-image: radial-gradient(#d1d1d1 1px, transparent 1px); 
+    background-size: 32px 32px;
+}
+.dark .hero-grid {
+    background-image: radial-gradient(#3a3a3a 1px, transparent 1px);
+    background-size: 32px 32px;
 }

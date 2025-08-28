@@ -1,5 +1,5 @@
 AUTHOR = 'Jesus Lemus'
-SITENAME = 'Jesus Lemus - DevOps Engineer'
+SITENAME = 'Jesus Lemus'
 SITEURL = ""
 
 PATH = "content"
@@ -14,6 +14,10 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
+
+SITEFOOTER="Jesus Lemus - <a href='https://www.linkedin.com/in/jesuslemusco/'>Linkedin</a>. <a href='mailto:jesus.lemus.leal@gmail.com' aria-label='Email'>Send an email</a>"
+SITESUBTITLE="A Personal Blog of a DevOps Engineer"
+
 
 # Blogroll
 LINKS = (
