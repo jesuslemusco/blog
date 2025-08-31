@@ -3,27 +3,32 @@
 
 {% block content %}
 <!-- Hero -->
-<section class="relative">
-  <div class="absolute inset-0 -z-10 h-full w-full bg-primary [background-image:radial-gradient(var(--border-color)_1px,transparent_1px)] [background-size:32px_32px]"></div>
-  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center text-center py-20 md:py-40">
-    <div class="max-w-3xl">
-      <h1 class="text-4xl md:text-5xl font-extrabold text-primary tracking-tighter">{{ SITENAME }} – <span class="text-gradient">{{ SITESUBTITLE }}</span></h1>
-      <p class="mt-6 max-w-2xl mx-auto text-lg md:text-xl text-secondary">{{ SITEDESCRIPTION }}</p>
-      <div class="mt-8">
-        <a href="{{ SITEURL }}/blog.html" class="px-8 py-3 rounded-lg btn-primary">Read The Blog</a>
-      </div>
-    </div>
+
+
+<!-- About Section -->
+<section id="about" class="py-20 lg:py-28 bg-primary px-4 sm:px-6 lg:px-8">
+  <div class="max-w-3xl mx-auto text-center">
+    <h2 class="text-3xl sm:text-4xl font-extrabold text-primary tracking-tighter">
+      Hi! I’m {{ AUTHOR.split(' ')[0] }}, a <span class="text-gradient">{{ SITESUBTITLE }}</span>
+    </h2>
+    <p class="mt-4 text-lg max-w-2xl mx-auto">
+      I build resilient developer platforms that empower engineering teams to ship faster.
+    </p>
   </div>
 </section>
 
+<!-- Separator -->
+<div class="w-3/5 mx-auto h-0.5 bg-[var(--border-color)] rounded-full"></div>
+
 <!-- Blog -->
-<section id="blog" class="py-20 lg:py-28 bg-secondary px-4 sm:px-6 lg:px-8">
+<section id="blog" class="py-20 lg:py-28 bg-primary px-4 sm:px-6 lg:px-8">
   <div class="max-w-5xl mx-auto">
     <div class="text-center mb-14">
       <h2 class="text-3xl sm:text-4xl font-extrabold text-primary tracking-tighter">From the Blog</h2>
-      <p class="mt-2 text-lg text-secondary">My latest thoughts and articles.</p>
+      <p class="mt-2 text-lg text-secondary">Thoughts on developer platforms, cloud native, and engineering efficiency.</p>
     </div>
-    <div class="grid md:grid-cols-3 gap-8">
+    <div class="h-scroll md:grid md:grid-cols-3 gap-6">
+      <!-- Blog Post For loop-->
       {% for article in articles[:3] %}
       <article class="rounded-xl overflow-hidden bg-primary border border-custom">
         {% if article.image %}
@@ -39,10 +44,13 @@
       {% endfor %}
     </div>
     <div class="text-center mt-12">
-        <a href="{{ SITEURL }}/blog.html" class="inline-block text-lg font-semibold text-gradient">View all entries →</a>
+        <a href="/blog/" class="inline-block text-lg font-semibold text-gradient">View all entries →</a>
     </div>
   </div>
 </section>
+
+<!-- Separator -->
+<div class="w-3/5 mx-auto h-0.5 bg-[var(--border-color)] rounded-full"></div>
 
 <!-- Open Source Projects -->
 <section id="github" class="py-20 lg:py-28 bg-primary px-4 sm:px-6 lg:px-8">
@@ -51,6 +59,10 @@
             <h2 class="text-3xl sm:text-4xl font-extrabold text-primary tracking-tighter">Open Source & Contributions</h2>
             <p class="mt-2 text-lg text-secondary">Tools and templates to help you build better platforms.</p>
         </div>
+        <div class="text-center">
+            <p class="max-w-3xl mx-auto text-lg">I believe in the power of open source to accelerate innovation. Below are some of my projects and contributions. Feel free to explore these repositories for templates and tools that can help you and your team build a more efficient and robust internal developer platform.</p>
+        </div>
+        <!-- GitHub Stats -->
         <div class="mt-12 flex justify-center items-center">
             <div class="w-full max-w-4xl flex flex-col md:flex-row justify-center items-start gap-8">
                 <div class="block dark:hidden w-full space-y-8 text-center"><img src="https://github-readme-stats.vercel.app/api?username={{ GITHUB_USERNAME }}&show_icons=true&theme=default&hide_border=true&bg_color=ffffff&title_color=111827&icon_color=598040&text_color=4b5563&rank_icon=github" alt="GitHub Stats" class="rounded-lg shadow-md mx-auto"/><img src="https://github-readme-stats.vercel.app/api/top-langs/?username={{ GITHUB_USERNAME }}&layout=compact&theme=default&hide_border=true&bg_color=ffffff&title_color=111827&text_color=4b5563" alt="Top Languages" class="rounded-lg shadow-md mx-auto"/></div>
@@ -62,4 +74,31 @@
         </div>
     </div>
 </section>
+
+<!-- Separator -->
+<div class="w-3/5 mx-auto h-0.5 bg-[var(--border-color)] rounded-full"></div>
+
+<!-- Contact / CTA -->
+<section id="contact" class="py-20 lg:py-28 bg-secondary px-4 sm:px-6 lg:px-8 border-t border-custom">
+  <div class="max-w-3xl mx-auto text-center">
+    <h2 class="text-3xl sm:text-4xl font-extrabold text-primary tracking-tighter">Let's Connect</h2>
+    <p class="mt-4 text-lg text-secondary">Have a project in mind or just want to chat about platform engineering? Feel free to reach out.</p>
+    <div class="mt-10 flex items-center justify-center flex-wrap gap-4">
+      {% for name, link in SOCIAL %}
+        {% if name|lower == 'email' %}
+          <a href="{{ link }}?subject=Connecting" class="inline-block px-8 py-3 rounded-lg btn-primary">Send Email</a>
+        {% endif %}
+      {% endfor %}
+      {% for name, link in SOCIAL %}
+        {% if name|lower == 'linkedin' %}
+          <a href="{{ link }}" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg btn-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            LinkedIn
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
 {% endblock content %}

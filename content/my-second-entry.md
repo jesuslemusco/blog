@@ -1,9 +1,9 @@
-Title: My First Entry
+Title: My second Entry
 Date: 2025-08-31 10:00
 Category: General
 Tags: intro, pelican, blog
-Slug: my-first-entry
-Author: Jesus Lemus
+Slug: my-second-entry
+Author: jesus Lemus
 Summary: A quick hello world post using Pelican.
 image: my-first-image.png
 ---

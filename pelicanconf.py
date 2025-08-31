@@ -1,8 +1,9 @@
-AUTHOR = 'David Lemus'
+AUTHOR = 'Jesus Lemus'
 SITENAME = "Jesus Lemus"
 SITETITLE = "Jesus Lemus - Platform Engineer"
 SITESUBTITLE = "Platform Engineer"
 SITEDESCRIPTION = "A blog about technology and more."
+# Thoughts on developer platforms, cloud native, and engineering efficiency.
 SITEURL = ""
 
 PATH = "content"
@@ -21,16 +22,16 @@ MENUITEMS = (
 )
 
 # Social widget
-GITHUB_USERNAME = 'your-username'
+GITHUB_USERNAME = 'jesuslemusco'
 SOCIAL = (
-    ('GitHub', f'https://github.com/{GITHUB_USERNAME}'),
     ('LinkedIn', 'https://linkedin.com/in/your-username'),
+    ('GitHub', f'https://github.com/{GITHUB_USERNAME}'),
     ('Email', 'mailto:jesus.lemus.leal@gmail.com'),
 )
 
 # Tell Pelican to use a page for the homepage and move the article list
 INDEX_SAVE_AS = 'blog.html' # /themes/simple-dev/templates/index.html
 
-# URL settings for static pages
+# URL settings for static pages 
 PAGE_URL = '{slug}.html'
 PAGE_SAVE_AS = './{slug}.html'
