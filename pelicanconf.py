@@ -43,6 +43,16 @@ PAGE_SAVE_AS = './{slug}.html'
 
 DEFAULT_PAGINATION = 6
 
+# Markdown settings for code highlighting
+MARKDOWN = {
+    'extension_configs': {
+        'markdown.extensions.codehilite': {'css_class': 'highlight'},
+        'markdown.extensions.extra': {},
+        'markdown.extensions.meta': {},
+    },
+    'output_format': 'html5',
+}
+
 STATIC_PATHS = ['images']
 
 # Uncomment following line if you want document-relative URLs when developing

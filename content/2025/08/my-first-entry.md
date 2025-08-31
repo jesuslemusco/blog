@@ -19,7 +19,7 @@ Developer Experience is the sum of all interactions a developer has with the too
 Improving DevEx isn't just a "nice-to-have" for engineers; it has a direct and measurable return on investment (ROI). The key is to shift focus from developer *activity* to developer *productivity*.
 
 > "The goal of a platform team is not to build a platform. The goal is to reduce cognitive load for developers so they can ship value to customers faster."
-> \- Matthew Skelton, Team Topologies
+> <footer>— Matthew Skelton, Team Topologies</footer>
 
 ![A chart showing upward trends in productivity]({static}/images/2025/08/my-first-image.png)
 
@@ -58,4 +58,3 @@ spec:
 Improving DevEx is a journey, not a destination. It starts with treating your internal platform as a product, with your developers as the customers. Talk to them. Identify their biggest pain points. Is it slow local builds? A confusing deployment process? Start there. Even small, incremental improvements can have a huge impact on morale and productivity.
 
 Ultimately, a world-class developer experience creates a virtuous cycle: happy, productive developers build better products, which leads to happy customers and a healthier business. And that is an ROI any leader can get behind.
-

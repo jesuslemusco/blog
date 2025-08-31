@@ -555,9 +555,6 @@
     --tw-tracking: var(--tracking-tighter);
     letter-spacing: var(--tracking-tighter);
   }
-  .italic {
-    font-style: italic;
-  }
   .not-italic {
     font-style: normal;
   }
@@ -794,6 +791,20 @@ body {
   color: var(--text-primary);
   font-style: italic;
   padding-left: 1.5em;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+}
+@media (min-width: 768px) {
+  .prose blockquote {
+    font-size: 1.5rem;
+  }
+}
+.prose blockquote footer {
+  margin-top: 1rem;
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  font-style: normal;
 }
 .prose code {
   background-color: var(--bg-secondary);
@@ -804,6 +815,14 @@ body {
   border-radius: 3px;
   font-family: 'Courier New', Courier, monospace;
 }
+.prose pre code {
+  background-color: transparent;
+  color: inherit;
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+  border-radius: 0;
+}
 .prose pre {
   background-color: var(--bg-secondary);
   border: 1px solid var(--border-color);
@@ -811,9 +830,15 @@ body {
   padding: 1em;
   overflow-x: auto;
 }
+.prose .highlight {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
 .prose img {
   border-radius: 0.75rem;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 @media (max-width: 767px) {
   .h-scroll {
