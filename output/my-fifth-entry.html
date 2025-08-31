@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-      
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jesus Lemus - My fifth Entry</title>
+    <title>My fifth Entry – Jesus Lemus</title>
 
     <!-- Tailwind CSS TODO: Remove this in later -->
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
@@ -19,16 +19,8 @@
 
     <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Jesus Lemus Full Atom Feed" />
 
-    <meta name="description" content="A blog about technology and more." />
+    <meta name="description" content="A quick hello world post using Pelican." />
     <meta name="theme-color" content="#000000" />
-
-
-
-
-
-    <meta name="tags" content="intro" />
-    <meta name="tags" content="pelican" />
-    <meta name="tags" content="blog" />
 
 </head>
 <body class="antialiased">
@@ -69,14 +61,20 @@
 
 
     <main>
-  <article>
-    <header>
-      <h2>
-        <a href="/my-fifth-entry.html" rel="bookmark"
-           title="Permalink to My fifth Entry">My fifth Entry</a></h2>
+<main class="w-full">
+  <!-- Blog Post Content -->
+  <article class="py-20 lg:py-28 bg-primary px-4 sm:px-6 lg:px-8">
+    <div class="max-w-3xl mx-auto">
+      <header class="mb-12 text-center">
+          <a href="/blog/" class="text-sm font-semibold text-gradient mb-4 inline-block">← Back to All Posts</a>
+          <h1 class="text-4xl md:text-5xl font-extrabold text-primary tracking-tighter">My fifth Entry</h1>
+          <p class="mt-4 text-lg text-secondary">Published on Sun 31 August 2025 by Jesus Lemus</p>
+      </header>
+
+      <img src="/images/my-first-image.png" alt="My fifth Entry" class="w-full h-auto object-cover rounded-xl shadow-lg mb-12" />
       
-    </header>
-    <p>Welcome to my first Pelican entry!  </p>
+      <div class="prose prose-lg max-w-none">
+          <p>Welcome to my first Pelican entry!  </p>
 <p>This is a simple blog post written in Markdown. Pelican will parse the metadata at the top and render this as an article.</p>
 <ul>
 <li>You can add <strong>bold</strong> or <em>italic</em> text.  </li>
@@ -85,24 +83,24 @@
 <p>Example code block:</p>
 <p>```python
 print("Hello, Pelican!")</p>
-    <footer>
-      <p>Published: <time datetime="2025-08-31T10:00:00+00:00">
-        Sun 31 August 2025
-      </time></p>
-        <address>
-          By             <a href="/author/jesus-lemus.html">Jesus Lemus</a>
-        </address>
-        <p>
-          Category: <a href="/category/general.html">General</a>
-        </p>
-        <p>
-          Tags:
-            <a href="/tag/intro.html">intro</a>
-            <a href="/tag/pelican.html">pelican</a>
-            <a href="/tag/blog.html">blog</a>
-        </p>
-    </footer>
+      </div>
+      
+      <div class="mt-16 pt-8 border-t border-custom text-center">
+          <h3 class="text-xl font-bold text-primary mb-4">Enjoyed this article? Share it!</h3>
+          <div class="flex items-center justify-center gap-4">
+            <a href="https://twitter.com/intent/tweet?text=My%20fifth%20Entry&url=/my-fifth-entry.html" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg btn-secondary">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+              Share on X
+            </a>
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=/my-fifth-entry.html&title=My%20fifth%20Entry" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg btn-secondary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              Share on LinkedIn
+            </a>
+          </div>
+        </div>
+    </div>
   </article>
+</main>
     </main>
     <script src="/theme/js/main.js"></script>
 </body>

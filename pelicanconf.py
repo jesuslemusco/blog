@@ -36,7 +36,9 @@ INDEX_SAVE_AS = 'blog.html' # /themes/simple-dev/templates/index.html
 PAGE_URL = '{slug}.html'
 PAGE_SAVE_AS = './{slug}.html'
 
-DEFAULT_PAGINATION = 6 
+DEFAULT_PAGINATION = 6
+
+STATIC_PATHS = ['images']
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
