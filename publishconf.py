@@ -1,23 +1,15 @@
-# This file is only used if you use `make publish` or
-# explicitly specify it as your config file.
-
+# This file is only used for publishing to production
 import os
 import sys
-
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-# If your site is available via HTTPS, make sure SITEURL begins with https://
-# SITEURL = "https://jesuslemus.co"
-SITEURL = "https://jesuslemusco.github.io/personal-blog/"
+# Set the SITEURL to your final production URL.
+# This is the root of your GitHub Pages site.
+SITEURL = 'https://jesuslemus.co'
 RELATIVE_URLS = False
 
-FEED_ALL_ATOM = "feeds/all.atom.xml"
-CATEGORY_FEED_ATOM = "feeds/{slug}.atom.xml"
+FEED_ALL_ATOM = 'feeds/all.atom.xml'
 
+# It's a good practice to delete the output directory before building for production
 DELETE_OUTPUT_DIRECTORY = True
-
-# Following items are often useful when publishing
-
-# DISQUS_SITENAME = ""
-# GOOGLE_ANALYTICS = ""

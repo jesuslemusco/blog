@@ -20,37 +20,39 @@
 <!-- Separator -->
 <div class="w-3/5 mx-auto h-0.5 bg-[var(--border-color)] rounded-full"></div>
 
-<!-- Blog -->
-<section id="blog" class="py-20 lg:py-28 bg-primary px-4 sm:px-6 lg:px-8">
-  <div class="max-w-5xl mx-auto">
-    <div class="text-center mb-14">
-      <h2 class="text-3xl sm:text-4xl font-extrabold text-primary tracking-tighter">From the Blog</h2>
-      <p class="mt-2 text-lg text-secondary">Thoughts on developer platforms, cloud native, and engineering efficiency.</p>
+{% if articles %}
+  <!-- Blog -->
+  <section id="blog" class="py-20 lg:py-28 bg-primary px-4 sm:px-6 lg:px-8">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-14">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-primary tracking-tighter">From the Blog</h2>
+        <p class="mt-2 text-lg text-secondary">Thoughts on developer platforms, cloud native, and engineering efficiency.</p>
+      </div>
+      <div class="h-scroll md:grid md:grid-cols-3 gap-6">
+        <!-- Blog Post For loop-->
+        {% for article in articles[:3] %}
+          <article class="card-snap rounded-xl overflow-hidden bg-secondary border border-custom">
+          {% if article.image %}
+          <img src="{{ SITEURL }}/images/{{ article.image }}" alt="{{ article.title }}" class="w-full h-48 object-cover" />
+          {% endif %}
+          <div class="p-6">
+            <p class="text-sm text-secondary">{{ article.locale_date }}</p>
+            <h3 class="mt-2 text-xl font-bold text-primary"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
+            <p class="mt-2 text-secondary">{{ article.summary|striptags }}</p>
+            <a href="{{ SITEURL }}/{{ article.url }}" class="mt-4 inline-block text-sm font-semibold text-gradient">Read more →</a>
+          </div>
+        </article>
+        {% endfor %}
+      </div>
+      <div class="text-center mt-12">
+          <a href="/blog/" class="inline-block text-lg font-semibold text-gradient">View all entries →</a>
+      </div>
     </div>
-    <div class="h-scroll md:grid md:grid-cols-3 gap-6">
-      <!-- Blog Post For loop-->
-      {% for article in articles[:3] %}
-        <article class="card-snap rounded-xl overflow-hidden bg-secondary border border-custom">
-        {% if article.image %}
-        <img src="{{ SITEURL }}/images/{{ article.image }}" alt="{{ article.title }}" class="w-full h-48 object-cover" />
-        {% endif %}
-        <div class="p-6">
-          <p class="text-sm text-secondary">{{ article.locale_date }}</p>
-          <h3 class="mt-2 text-xl font-bold text-primary"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
-          <p class="mt-2 text-secondary">{{ article.summary|striptags }}</p>
-          <a href="{{ SITEURL }}/{{ article.url }}" class="mt-4 inline-block text-sm font-semibold text-gradient">Read more →</a>
-        </div>
-      </article>
-      {% endfor %}
-    </div>
-    <div class="text-center mt-12">
-        <a href="/blog/" class="inline-block text-lg font-semibold text-gradient">View all entries →</a>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- Separator -->
-<div class="w-3/5 mx-auto h-0.5 bg-[var(--border-color)] rounded-full"></div>
+  <!-- Separator -->
+  <div class="w-3/5 mx-auto h-0.5 bg-[var(--border-color)] rounded-full"></div>
+{% endif %}
 
 <!-- Open Source Projects -->
 <section id="github" class="py-20 lg:py-28 bg-primary px-4 sm:px-6 lg:px-8">

@@ -22,6 +22,8 @@
           <a href="{{ SITEURL }}/{{ article.url }}" class="mt-4 inline-block text-sm font-semibold text-gradient">Read more →</a>
         </div>
       </article>
+      {% else %}
+        <p class="text-center text-secondary col-span-full">No posts have been published yet. Check back soon!</p>
       {% endfor %}
     </div>
 
