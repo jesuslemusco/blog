@@ -1,26 +1,45 @@
 {% extends "base.html" %}
+{% block title %}Blog – {{ SITENAME }}{% endblock %}
+
 {% block content %}
-    {% block content_title %}
-        <h2>All articles</h2>
-    {% endblock %}
+<section id="blog" class="py-20 lg:py-28 bg-primary px-4 sm:px-6 lg:px-8">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-14">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-primary tracking-tighter">The Blog</h1>
+      <p class="mt-4 text-lg text-secondary">Thoughts on technology, life, and everything in between.</p>
+    </div>
 
-    {% for article in articles_page.object_list %}
-        <article>
-            <header> <h2><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2> </header>
-            <section>{{ article.summary }}</section>
-            <footer>
-                <p>Published: <time datetime="{{ article.date.isoformat() }}"> {{ article.locale_date }} </time></p>
-                <address>By
-                    {% for author in article.authors %}
-                        <a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>
-                    {% endfor %}
-                </address>
-            </footer>
-        </article>
-    {% endfor %}
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {% for article in articles_page.object_list %}
+      <article class="rounded-xl overflow-hidden bg-secondary border border-custom">
+        {% if article.image %}
+        <img src="{{ SITEURL }}/images/{{ article.image }}" alt="{{ article.title }}" class="w-full h-48 object-cover" />
+        {% endif %}
+        <div class="p-6">
+          <p class="text-sm text-secondary">{{ article.locale_date }}</p>
+          <h3 class="mt-2 text-xl font-bold text-primary"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
+          <p class="mt-2 text-secondary">{{ article.summary|striptags }}</p>
+          <a href="{{ SITEURL }}/{{ article.url }}" class="mt-4 inline-block text-sm font-semibold text-gradient">Read more →</a>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
 
-    {% if articles_page.has_other_pages() %}
-        {% include 'pagination.html' %}
+    <!-- Pagination -->
+    {% if articles_page.has_previous() or articles_page.has_next() %}
+    <div class="mt-16 flex justify-between items-center">
+      {% if articles_page.has_previous() %}
+      <a href="{{ SITEURL }}/{{ articles_previous_page.url }}" class="btn-secondary px-6 py-2 rounded-lg">&larr; Newer Posts</a>
+      {% else %}
+      <span></span>
+      {% endif %}
+      {% if articles_page.has_next() %}
+      <a href="{{ SITEURL }}/{{ articles_next_page.url }}" class="btn-secondary px-6 py-2 rounded-lg">Older Posts &rarr;</a>
+      {% else %}
+      <span></span>
+      {% endif %}
+    </div>
     {% endif %}
-
+  </div>
+</section>
 {% endblock content %}
