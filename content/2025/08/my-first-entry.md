@@ -5,7 +5,7 @@ Tags: DevEx, Platform Engineering, ROI
 Slug: roi-of-great-devex
 Author: Jesus Lemus
 Summary: An in-depth look at how investing in internal platforms directly impacts business value.
-Image: devex-roi-featured.jpg
+Image: 2025/08/my-first-image.png
 ---
 
 In today's competitive landscape, the speed and efficiency of engineering teams are a critical business advantage. While leaders often focus on hiring top talent, they sometimes overlook an equally important factor: the internal environment where developers work. This is where Developer Experience, or DevEx, comes in. A great DevEx isn't about free snacks and ping pong tables; it's about removing friction and empowering engineers to do their best work. As a Platform Engineer, I see it as my primary goal to cultivate this environment.
@@ -21,7 +21,7 @@ Improving DevEx isn't just a "nice-to-have" for engineers; it has a direct and m
 > "The goal of a platform team is not to build a platform. The goal is to reduce cognitive load for developers so they can ship value to customers faster."
 > \- Matthew Skelton, Team Topologies
 
-![A chart showing upward trends in productivity]({static}/images/productivity-chart.jpg)
+![A chart showing upward trends in productivity]({static}/images/2025/08/my-first-image.png)
 
 ## Key Metrics Improved by DevEx:
 

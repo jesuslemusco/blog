@@ -32,7 +32,12 @@ SOCIAL = (
 # Tell Pelican to use a page for the homepage and move the article list
 INDEX_SAVE_AS = 'blog.html' # /themes/simple-dev/templates/index.html
 
-# URL settings for static pages 
+# URL settings for articles to match content directory structure.
+PATH_METADATA = r'(?P<year>\d{4})/(?P<month>\d{2})/.*'
+ARTICLE_URL = '{year}/{month}/{slug}.html'
+ARTICLE_SAVE_AS = '{year}/{month}/{slug}.html'
+
+# URL settings for static pages
 PAGE_URL = '{slug}.html'
 PAGE_SAVE_AS = './{slug}.html'
 
@@ -42,4 +47,3 @@ STATIC_PATHS = ['images']
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
-
