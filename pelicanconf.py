@@ -1,39 +1,31 @@
-AUTHOR = 'Jesus Lemus'
-SITENAME = 'Jesus Lemus'
+AUTHOR = 'David Lemus'
+SITENAME = "Jesus Lemus"
+SITETITLE = "Jesus Lemus - Platform Engineer"
+SITEDESCRIPTION = "A blog about technology and more."
 SITEURL = ""
 
 PATH = "content"
+THEME = "themes/simple-dev"
 
-TIMEZONE = 'America/Bogota'
+DEFAULT_LANG = "en"
 
-DEFAULT_LANG = 'en'
+# Feed generation is usually desired
+FEED_ALL_ATOM = 'feeds/all.atom.xml'
 
-# Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
-CATEGORY_FEED_ATOM = None
-TRANSLATION_FEED_ATOM = None
-AUTHOR_FEED_ATOM = None
-AUTHOR_FEED_RSS = None
-
-SITEFOOTER="Jesus Lemus - <a href='https://www.linkedin.com/in/jesuslemusco/'>Linkedin</a>. <a href='mailto:jesus.lemus.leal@gmail.com' aria-label='Email'>Send an email</a>"
-SITESUBTITLE="A Personal Blog of a DevOps Engineer"
-
-
-# Blogroll
-LINKS = (
-    ("Pelican", "https://getpelican.com/"),
-    ("Python.org", "https://www.python.org/"),
-    ("Jinja2", "https://palletsprojects.com/p/jinja/"),
-    ("You can modify those links in your config file", "#"),
+# Navigation menu
+MENUITEMS = (
+    ('Blog', '/'),
+    ('About', '/pages/about.html'),
+    ('Projects', '/pages/projects.html'),
 )
 
 # Social widget
 SOCIAL = (
-    ("You can add links in your config file", "#"),
-    ("Another social link", "#"),
+    ('GitHub', 'https://github.com/your-username'),
+    ('LinkedIn', 'https://linkedin.com/in/your-username'),
+    ('Email', 'mailto:jesus.lemus.leal@gmail.com'),
 )
 
-DEFAULT_PAGINATION = 10
-
-# Uncomment following line if you want document-relative URLs when developing
-# RELATIVE_URLS = True
+# URL settings for static pages
+PAGE_URL = 'pages/{slug}.html'
+PAGE_SAVE_AS = 'pages/{slug}.html'

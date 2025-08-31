@@ -19,7 +19,7 @@ pip install -r requirements.txt
 Open in each in different cli tap to run locally.
 
 ```
-npx @tailwindcss/cli -i themes/personal/static/css/input.css -o themes/personal/static/css/output.css --watch
+npx @tailwindcss/cli -i themes/simple-dev/static/css/main.css -o themes/simple-dev/static/css/style.css --watch
 make regenerate
 pelican --listen 
 ```

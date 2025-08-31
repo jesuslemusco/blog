@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Jesus Lemus</title><link href="/" rel="alternate"/><link href="/feeds/all-en.atom.xml" rel="self"/><id>/</id><updated>2025-08-31T10:00:00+00:00</updated><entry><title>My First Entry</title><link href="/my-first-entry.html" rel="alternate"/><published>2025-08-31T10:00:00+00:00</published><updated>2025-08-31T10:00:00+00:00</updated><author><name>David Lemus</name></author><id>tag:None,2025-08-31:/my-first-entry.html</id><summary type="html">&lt;p&gt;A quick hello world post using Pelican.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Welcome to my first Pelican entry!  &lt;/p&gt;
+&lt;p&gt;This is a simple blog post written in Markdown. Pelican will parse the metadata at the top and render this as an article.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You can add &lt;strong&gt;bold&lt;/strong&gt; or &lt;em&gt;italic&lt;/em&gt; text.  &lt;/li&gt;
+&lt;li&gt;Use lists, code blocks, images, and more.  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Example code block:&lt;/p&gt;
+&lt;p&gt;```python
+print("Hello, Pelican!")&lt;/p&gt;</content><category term="General"/><category term="intro"/><category term="pelican"/><category term="blog"/></entry></feed>

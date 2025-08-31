@@ -16,7 +16,7 @@
   <!-- Favicon -->
   <link rel="icon" href="https://placehold.co/32x32/97B136/000000?text=JL" type="image/x-icon" />
 
-  <meta name="description" content="The personal portfolio and blog of Jesus Lemus, a passionate DevOps Engineer." />
+  <meta name="description" content="The blog of Jesus Lemus, a passionate Platform Engineer." />
   <meta name="theme-color" content="#000000" />
 
   <style>
@@ -86,10 +86,24 @@
               <svg id="theme-toggle-dark-icon" class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
               <svg id="theme-toggle-light-icon" class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zM3 11a1 1 0 100-2H2a1 1 0 100 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
             </button>
+            <button id="mobile-menu-button" class="md:hidden text-secondary hover:text-primary focus:outline-none" aria-label="Open menu">
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
           </div>
         </div>
       </div>
     </nav>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden fixed top-0 left-0 w-full h-full bg-primary z-40">
+      <button id="mobile-menu-close-button" class="absolute top-7 right-5 text-secondary hover:text-primary focus:outline-none" aria-label="Close menu">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+      </button>
+      <ul class="flex flex-col items-center justify-center h-full space-y-8 text-2xl">
+        <li><a href="index.html#blog" class="text-secondary hover:text-primary">Blog</a></li>
+        <li><a href="index.html#contact" class="text-secondary hover:text-primary">Contact</a></li>
+      </ul>
+    </div>
   </header>
 
   <main class="w-full">
@@ -98,7 +112,7 @@
       <div class="max-w-5xl mx-auto">
         <div class="text-center mb-14">
           <h1 class="text-4xl md:text-5xl font-extrabold text-primary tracking-tighter">The Blog</h1>
-          <p class="mt-4 text-lg text-secondary">A collection of thoughts on cloud, automation, and culture.</p>
+          <p class="mt-4 text-lg text-secondary">Thoughts on developer platforms, cloud native, and engineering efficiency.</p>
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -106,29 +120,29 @@
           <article class="rounded-xl overflow-hidden bg-secondary border border-custom">
             <img src="https://images.unsplash.com/photo-1618477388954-7852f32655ec?q=80&w=800&auto=format&fit=crop" alt="Abstract code on a screen" class="w-full h-48 object-cover" />
             <div class="p-6">
-              <p class="text-sm text-secondary">July 15, 2024</p>
-              <h3 class="mt-2 text-xl font-bold text-primary">5 Common Mistakes in CI/CD Pipelines</h3>
-              <p class="mt-2 text-secondary">How to avoid the pitfalls that slow down your delivery and introduce risk.</p>
-              <a href="blog-entry.html" class="mt-4 inline-block text-sm font-semibold text-gradient">Read more →</a>
+              <p class="text-sm text-secondary">August 15, 2025</p>
+              <h3 class="mt-2 text-xl font-bold text-primary">The ROI of a Great Developer Experience (DevEx)</h3>
+              <p class="mt-2 text-secondary">How investing in internal platforms directly impacts velocity and retention.</p>
+              <a href="#" class="mt-4 inline-block text-sm font-semibold text-gradient">Read more →</a>
             </div>
           </article>
           <!-- Blog Post 2 -->
           <article class="rounded-xl overflow-hidden bg-secondary border border-custom">
-            <img src="https://images.unsplash.com/photo-1580894908361-967195033215?q=80&w=800&auto=format&fit=crop" alt="Cloud cost dashboard" class="w-full h-48 object-cover" />
+            <img src="https://images.unsplash.com/photo-1580894908361-967195033215?q=80&w=800&auto=format&fit=crop" alt="Team collaborating on a whiteboard" class="w-full h-48 object-cover" />
             <div class="p-6">
-              <p class="text-sm text-secondary">June 28, 2024</p>
-              <h3 class="mt-2 text-xl font-bold text-primary">A Practical Guide to Cloud Cost Optimization</h3>
-              <p class="mt-2 text-secondary">Strategies for reducing your AWS bill without sacrificing performance.</p>
+              <p class="text-sm text-secondary">July 28, 2025</p>
+              <h3 class="mt-2 text-xl font-bold text-primary">Demystifying Internal Developer Platforms</h3>
+              <p class="mt-2 text-secondary">What an IDP is (and isn't), and the first steps to building one for your team.</p>
               <a href="#" class="mt-4 inline-block text-sm font-semibold text-gradient">Read more →</a>
             </div>
           </article>
           <!-- Blog Post 3 -->
           <article class="rounded-xl overflow-hidden bg-secondary border border-custom">
-            <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=800&auto=format&fit=crop" alt="Kubernetes logo on a laptop" class="w-full h-48 object-cover" />
+            <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=800&auto=format&fit=crop" alt="Cloud infrastructure diagram" class="w-full h-48 object-cover" />
             <div class="p-6">
-              <p class="text-sm text-secondary">May 10, 2024</p>
-              <h3 class="mt-2 text-xl font-bold text-primary">Why You Should Use Infrastructure as Code</h3>
-              <p class="mt-2 text-secondary">An introduction to Terraform and the benefits of managing infrastructure programmatically.</p>
+              <p class="text-sm text-secondary">June 10, 2025</p>
+              <h3 class="mt-2 text-xl font-bold text-primary">Terraform for Platform Teams: Building Modules</h3>
+              <p class="mt-2 text-secondary">An introduction to creating reusable, versioned, and scalable IaC modules.</p>
               <a href="#" class="mt-4 inline-block text-sm font-semibold text-gradient">Read more →</a>
             </div>
           </article>
@@ -136,9 +150,9 @@
            <article class="rounded-xl overflow-hidden bg-secondary border border-custom">
             <img src="https://images.unsplash.com/photo-1517694712202-1428bc648c2a?q=80&w=800&auto=format&fit=crop" alt="Developer working on a laptop" class="w-full h-48 object-cover" />
             <div class="p-6">
-              <p class="text-sm text-secondary">April 22, 2024</p>
-              <h3 class="mt-2 text-xl font-bold text-primary">The DevOps Culture Shift</h3>
-              <p class="mt-2 text-secondary">It's not just about tools, it's about collaboration and mindset.</p>
+              <p class="text-sm text-secondary">May 22, 2025</p>
+              <h3 class="mt-2 text-xl font-bold text-primary">Golden Paths: Paving the Road for Developers</h3>
+              <p class="mt-2 text-secondary">How to create supported workflows that make the easy way the right way.</p>
               <a href="#" class="mt-4 inline-block text-sm font-semibold text-gradient">Read more →</a>
             </div>
           </article>
@@ -146,9 +160,9 @@
           <article class="rounded-xl overflow-hidden bg-secondary border border-custom">
             <img src="https://images.unsplash.com/photo-1526374965328-5f61d4dc18c5?q=80&w=800&auto=format&fit=crop" alt="Green binary code on a screen" class="w-full h-48 object-cover" />
             <div class="p-6">
-              <p class="text-sm text-secondary">March 15, 2024</p>
-              <h3 class="mt-2 text-xl font-bold text-primary">Getting Started with Docker</h3>
-              <p class="mt-2 text-secondary">A beginner's guide to containerization and why it matters.</p>
+              <p class="text-sm text-secondary">April 15, 2025</p>
+              <h3 class="mt-2 text-xl font-bold text-primary">Platform as a Product</h3>
+              <p class="mt-2 text-secondary">Applying product management principles to internal platform development.</p>
               <a href="#" class="mt-4 inline-block text-sm font-semibold text-gradient">Read more →</a>
             </div>
           </article>
@@ -156,9 +170,9 @@
           <article class="rounded-xl overflow-hidden bg-secondary border border-custom">
             <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=800&auto=format&fit=crop" alt="Team collaborating around a table" class="w-full h-48 object-cover" />
             <div class="p-6">
-              <p class="text-sm text-secondary">February 29, 2024</p>
-              <h3 class="mt-2 text-xl font-bold text-primary">Monitoring and Observability Explained</h3>
-              <p class="mt-2 text-secondary">Understanding the difference and why you need both.</p>
+              <p class="text-sm text-secondary">March 29, 2025</p>
+              <h3 class="mt-2 text-xl font-bold text-primary">Beyond CI/CD: The Evolving Role of Platform Teams</h3>
+              <p class="mt-2 text-secondary">Exploring the expanding responsibilities of modern platform engineering.</p>
               <a href="#" class="mt-4 inline-block text-sm font-semibold text-gradient">Read more →</a>
             </div>
           </article>
@@ -173,16 +187,19 @@
     </section>
   </main>
 
-  <footer class="border-t border-custom bg-secondary">
+  <footer class="border-t border-custom bg-primary">
     <div class="max-w-5xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col sm:flex-row justify-between items-center">
         <p class="text-sm text-secondary">&copy; <span id="year"></span> Jesus Lemus. All Rights Reserved.</p>
         <div class="flex space-x-6 mt-4 sm:mt-0">
-          <a href="https://www.linkedin.com" target="_blank" rel="noopener" class="text-secondary hover:text-primary transition-colors" aria-label="LinkedIn">
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H6.34C3.963 1 2 2.986 2 5.333v13.333C2 21.018 3.963 23 6.34 23h11.328c2.377 0 4.332-1.982 4.332-4.333V5.333C22 2.986 20.045 1 17.668 1z" /></svg>
+          <a href="https://www.linkedin.com/in/jesuslemusco/" target="_blank" rel="noopener" class="text-secondary hover:text-primary transition-colors" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
           </a>
-          <a href="mailto:contact@jesuslemus.co" class="text-secondary hover:text-primary transition-colors" aria-label="Email">
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.92.613 2.162.92 3.403.92s2.483-.307 3.403-.92l6.598-3.185c.025-.012.05-.023.076-.032V4.5A1.5 1.5 0 0 0 19.5 3h-15Z" /><path d="M1 6.868v10.637A1.5 1.5 0 0 0 2.5 19h15a1.5 1.5 0 0 0 1.5-1.5V6.868L14.402 10.05c-1.15.767-2.654 1.15-4.152 1.15s-3.002-.383-4.152-1.15L1 6.868Z" /></svg>
+          <a href="https://github.com/jesuslemusco" target="_blank" rel="noopener" class="text-secondary hover:text-primary transition-colors" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.54 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          </a>
+          <a href="mailto:jesus.lemus.leal@gmail.com" class="text-secondary hover:text-primary transition-colors" aria-label="Email">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
           </a>
         </div>
       </div>
@@ -225,6 +242,15 @@
           }
         }
       });
+      
+      // Mobile Menu Logic
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const mobileMenuCloseButton = document.getElementById('mobile-menu-close-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const toggleMenu = (e) => { e && e.stopPropagation(); mobileMenu.classList.toggle('hidden'); };
+      mobileMenuButton.addEventListener('click', toggleMenu);
+      mobileMenuCloseButton.addEventListener('click', toggleMenu);
+      mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', toggleMenu));
 
       // Footer year
       const y = document.getElementById('year'); if (y) y.textContent = new Date().getFullYear();
@@ -232,3 +258,4 @@
   </script>
 </body>
 </html>
+

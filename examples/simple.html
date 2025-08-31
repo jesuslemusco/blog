@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jesus Lemus – DevOps Engineer</title>
+  <title>Jesus Lemus – Platform Engineer</title>
 
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -16,7 +16,7 @@
   <!-- Favicon -->
   <link rel="icon" href="https://placehold.co/32x32/97B136/000000?text=JL" type="image/x-icon" />
 
-  <meta name="description" content="The personal portfolio and blog of Jesus Lemus, a passionate DevOps Engineer." />
+  <meta name="description" content="The personal portfolio and blog of Jesus Lemus, a passionate Platform Engineer." />
   <meta name="theme-color" content="#000000" />
 
   <style>
@@ -92,16 +92,6 @@
       .h-scroll::-webkit-scrollbar { display: none; }
       .card-snap { width: 85%; flex-shrink: 0; scroll-snap-align: center; }
     }
-
-    .hero-grid {
-        background-color: var(--bg-primary);
-        background-image: radial-gradient(#d1d1d1 1px, transparent 1px); 
-        background-size: 32px 32px;
-    }
-    .dark .hero-grid {
-        background-image: radial-gradient(#3a3a3a 1px, transparent 1px);
-        background-size: 32px 32px;
-    }
   </style>
 </head>
 <body class="antialiased">
@@ -143,68 +133,56 @@
   </header>
 
   <main class="w-full">
-    <!-- Hero -->
-    <section class="relative">
-      <div class="absolute inset-0 -z-10 h-full w-full hero-grid"></div>
-      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center text-center py-20 md:py-40">
-        <div class="max-w-3xl">
-          <h1 class="text-4xl md:text-6xl font-extrabold text-primary tracking-tighter">DevOps Engineer & <span class="text-gradient">Problem Solver</span></h1>
-          <p class="mt-6 max-w-2xl mx-auto text-lg md:text-xl text-secondary">Building scalable, secure, and automated infrastructure to help teams ship faster and sleep better.</p>
-          <div class="mt-8">
-            <a href="#contact" class="px-8 py-3 rounded-lg btn-primary">Get In Touch</a>
-          </div>
-        </div>
+    <!-- About Section -->
+    <section id="about" class="py-20 lg:py-28 bg-primary px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-primary tracking-tighter">
+          Hi! I’m Jesus, a <span class="text-gradient">Platform Engineer</span>
+        </h2>
+        <p class="mt-4 text-lg max-w-2xl mx-auto">
+          I build resilient developer platforms that empower engineering teams to ship faster.
+        </p>
       </div>
     </section>
 
-    <!-- About -->
-    <section id="about" class="py-20 lg:py-28 bg-secondary px-4 sm:px-6 lg:px-8">
-      <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-center gap-12">
-        <div class="flex-shrink-0">
-          <img src="https://images.unsplash.com/photo-1557862921-37829c790f19?q=80&w=400&auto=format&fit=crop" alt="Portrait of Jesus Lemus" class="rounded-full w-48 h-48 md:w-64 md:h-64 object-cover shadow-2xl border-4 border-white dark:border-gray-800" />
-        </div>
-        <div class="text-center md:text-left">
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-primary tracking-tighter">Hi, I’m Jesus.</h2>
-          <p class="mt-4 text-lg max-w-2xl">I'm a Senior DevOps Engineer with deep experience across AWS, Azure, and GCP. I thrive on building robust automation pipelines, optimizing cloud costs, and embedding security into every layer of the development lifecycle.</p>
-        </div>
-      </div>
-    </section>
+    <!-- Separator -->
+    <div class="w-3/5 mx-auto h-0.5 bg-[var(--border-color)] rounded-full"></div>
 
     <!-- Blog -->
     <section id="blog" class="py-20 lg:py-28 bg-primary px-4 sm:px-6 lg:px-8">
       <div class="max-w-5xl mx-auto">
         <div class="text-center mb-14">
           <h2 class="text-3xl sm:text-4xl font-extrabold text-primary tracking-tighter">From the Blog</h2>
-          <p class="mt-2 text-lg text-secondary">Thoughts on cloud, automation, and culture.</p>
+          <p class="mt-2 text-lg text-secondary">Thoughts on developer platforms, cloud native, and engineering efficiency.</p>
         </div>
         <div class="h-scroll md:grid md:grid-cols-3 gap-6">
           <!-- Blog Post 1 -->
           <article class="card-snap rounded-xl overflow-hidden bg-secondary border border-custom">
             <img src="https://images.unsplash.com/photo-1618477388954-7852f32655ec?q=80&w=800&auto=format&fit=crop" alt="Abstract code on a screen" class="w-full h-48 object-cover" />
             <div class="p-6">
-              <p class="text-sm text-secondary">July 15, 2024</p>
-              <h3 class="mt-2 text-xl font-bold text-primary">5 Common Mistakes in CI/CD Pipelines</h3>
-              <p class="mt-2 text-secondary">How to avoid the pitfalls that slow down your delivery and introduce risk.</p>
-              <a href="blog-entry.html" class="mt-4 inline-block text-sm font-semibold text-gradient">Read more →</a>
+              <p class="text-sm text-secondary">August 15, 2025</p>
+              <h3 class="mt-2 text-xl font-bold text-primary">The ROI of a Great Developer Experience (DevEx)</h3>
+              <p class="mt-2 text-secondary">How investing in internal platforms directly impacts velocity and retention.</p>
+              <a href="#" class="mt-4 inline-block text-sm font-semibold text-gradient">Read more →</a>
             </div>
           </article>
           <!-- Blog Post 2 -->
           <article class="card-snap rounded-xl overflow-hidden bg-secondary border border-custom">
-            <img src="https://images.unsplash.com/photo-1580894908361-967195033215?q=80&w=800&auto=format&fit=crop" alt="Cloud cost dashboard" class="w-full h-48 object-cover" />
+            <img src="https://images.unsplash.com/photo-1580894908361-967195033215?q=80&w=800&auto=format&fit=crop" alt="Team collaborating on a whiteboard" class="w-full h-48 object-cover" />
             <div class="p-6">
-              <p class="text-sm text-secondary">June 28, 2024</p>
-              <h3 class="mt-2 text-xl font-bold text-primary">A Practical Guide to Cloud Cost Optimization</h3>
-              <p class="mt-2 text-secondary">Strategies for reducing your AWS bill without sacrificing performance.</p>
+              <p class="text-sm text-secondary">July 28, 2025</p>
+              <h3 class="mt-2 text-xl font-bold text-primary">Demystifying Internal Developer Platforms</h3>
+              <p class="mt-2 text-secondary">What an IDP is (and isn't), and the first steps to building one for your team.</p>
               <a href="#" class="mt-4 inline-block text-sm font-semibold text-gradient">Read more →</a>
             </div>
           </article>
           <!-- Blog Post 3 -->
           <article class="card-snap rounded-xl overflow-hidden bg-secondary border border-custom">
-            <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=800&auto=format&fit=crop" alt="Kubernetes logo on a laptop" class="w-full h-48 object-cover" />
+            <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=800&auto=format&fit=crop" alt="Cloud infrastructure diagram" class="w-full h-48 object-cover" />
             <div class="p-6">
-              <p class="text-sm text-secondary">May 10, 2024</p>
-              <h3 class="mt-2 text-xl font-bold text-primary">Why You Should Use Infrastructure as Code</h3>
-              <p class="mt-2 text-secondary">An introduction to Terraform and the benefits of managing infrastructure programmatically.</p>
+              <p class="text-sm text-secondary">June 10, 2025</p>
+              <h3 class="mt-2 text-xl font-bold text-primary">Terraform for Platform Teams: Building Modules</h3>
+              <p class="mt-2 text-secondary">An introduction to creating reusable, versioned, and scalable IaC modules.</p>
               <a href="#" class="mt-4 inline-block text-sm font-semibold text-gradient">Read more →</a>
             </div>
           </article>
@@ -215,15 +193,52 @@
       </div>
     </section>
 
+    <!-- Separator -->
+    <div class="w-3/5 mx-auto h-0.5 bg-[var(--border-color)] rounded-full"></div>
+
+    <!-- Open Source Projects -->
+    <section id="github" class="py-20 lg:py-28 bg-primary px-4 sm:px-6 lg:px-8">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-14">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-primary tracking-tighter">Open Source & Contributions</h2>
+                <p class="mt-2 text-lg text-secondary">Tools and templates to help you build better platforms.</p>
+            </div>
+            <div class="text-center">
+                <p class="max-w-3xl mx-auto text-lg">I believe in the power of open source to accelerate innovation. Below are some of my projects and contributions. Feel free to explore these repositories for templates and tools that can help you and your team build a more efficient and robust internal developer platform.</p>
+            </div>
+            <!-- GitHub Stats -->
+            <div class="mt-12 flex justify-center items-center">
+                <div class="w-full max-w-4xl flex flex-col md:flex-row justify-center items-start gap-8">
+                    <!-- Light mode stats -->
+                    <div class="block dark:hidden w-full space-y-8 text-center">
+                        <img src="https://github-readme-stats.vercel.app/api?username=jesuslemusco&show_icons=true&theme=default&hide_border=true&bg_color=f8f8f8&title_color=111827&icon_color=598040&text_color=4b5563&rank_icon=github" alt="GitHub Stats" class="rounded-lg shadow-md mx-auto"/>
+                        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jesuslemusco&layout=compact&theme=default&hide_border=true&bg_color=f8f8f8&title_color=111827&text_color=4b5563" alt="Top Languages" class="rounded-lg shadow-md mx-auto"/>
+                    </div>
+                    <!-- Dark mode stats -->
+                    <div class="hidden dark:block w-full space-y-8 text-center">
+                        <img src="https://github-readme-stats.vercel.app/api?username=jesuslemusco&show_icons=true&theme=dark&hide_border=true&bg_color=111111&title_color=e5e7eb&icon_color=97b136&text_color=9ca3af&rank_icon=github" alt="GitHub Stats" class="rounded-lg shadow-md mx-auto"/>
+                        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jesuslemusco&layout=compact&theme=dark&hide_border=true&bg_color=111111&title_color=e5e7eb&text_color=9ca3af" alt="Top Languages" class="rounded-lg shadow-md mx-auto"/>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="https://github.com/jesuslemusco" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-8 py-3 rounded-lg btn-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.54 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    Explore on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact / CTA -->
-    <section id="contact" class="py-20 lg:py-28 bg-secondary px-4 sm:px-6 lg:px-8">
+    <section id="contact" class="py-20 lg:py-28 bg-secondary px-4 sm:px-6 lg:px-8 border-t border-custom">
       <div class="max-w-3xl mx-auto text-center">
         <h2 class="text-3xl sm:text-4xl font-extrabold text-primary tracking-tighter">Let's Connect</h2>
-        <p class="mt-4 text-lg text-secondary">Have a project in mind or just want to chat about DevOps? Feel free to reach out.</p>
-        <div class="mt-10 flex items-center justify-center gap-4">
-          <a href="mailto:contact@jesuslemus.co?subject=Connecting" class="inline-block px-8 py-3 rounded-lg btn-primary">Email Me</a>
-          <a href="https://www.linkedin.com" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg btn-secondary">
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H6.34C3.963 1 2 2.986 2 5.333v13.333C2 21.018 3.963 23 6.34 23h11.328c2.377 0 4.332-1.982 4.332-4.333V5.333C22 2.986 20.045 1 17.668 1z" /></svg>
+        <p class="mt-4 text-lg text-secondary">Have a project in mind or just want to chat about platform engineering? Feel free to reach out.</p>
+        <div class="mt-10 flex items-center justify-center flex-wrap gap-4">
+          <a href="mailto:jesus.lemus.leal@gmail.com?subject=Connecting" class="inline-block px-8 py-3 rounded-lg btn-primary">Send Email</a>
+          <a href="https://www.linkedin.com/in/jesuslemusco/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg btn-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
             LinkedIn
           </a>
         </div>
@@ -236,11 +251,14 @@
       <div class="flex flex-col sm:flex-row justify-between items-center">
         <p class="text-sm text-secondary">&copy; <span id="year"></span> Jesus Lemus. All Rights Reserved.</p>
         <div class="flex space-x-6 mt-4 sm:mt-0">
-          <a href="https://www.linkedin.com" target="_blank" rel="noopener" class="text-secondary hover:text-primary transition-colors" aria-label="LinkedIn">
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H6.34C3.963 1 2 2.986 2 5.333v13.333C2 21.018 3.963 23 6.34 23h11.328c2.377 0 4.332-1.982 4.332-4.333V5.333C22 2.986 20.045 1 17.668 1z" /></svg>
+          <a href="https://www.linkedin.com/in/jesuslemusco/" target="_blank" rel="noopener" class="text-secondary hover:text-primary transition-colors" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
           </a>
-          <a href="mailto:contact@jesuslemus.co" class="text-secondary hover:text-primary transition-colors" aria-label="Email">
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.92.613 2.162.92 3.403.92s2.483-.307 3.403-.92l6.598-3.185c.025-.012.05-.023.076-.032V4.5A1.5 1.5 0 0 0 19.5 3h-15Z" /><path d="M1 6.868v10.637A1.5 1.5 0 0 0 2.5 19h15a1.5 1.5 0 0 0 1.5-1.5V6.868L14.402 10.05c-1.15.767-2.654 1.15-4.152 1.15s-3.002-.383-4.152-1.15L1 6.868Z" /></svg>
+          <a href="https://github.com/jesuslemusco" target="_blank" rel="noopener" class="text-secondary hover:text-primary transition-colors" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.54 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          </a>
+          <a href="mailto:jesus.lemus.leal@gmail.com" class="text-secondary hover:text-primary transition-colors" aria-label="Email">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
           </a>
         </div>
       </div>
@@ -299,3 +317,7 @@
   </script>
 </body>
 </html>
+
+
+
+

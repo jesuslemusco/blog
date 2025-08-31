@@ -8,7 +8,7 @@ OUTPUTDIR=$(BASEDIR)/output
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 # THEME_ROOT=themes/personal/
-THEME_ROOT=themes/Pelican-Cid/
+THEME_ROOT=themes/simple-dev/
 
 GITHUB_PAGES_BRANCH=main
 GITHUB_PAGES_COMMIT_MESSAGE=Generate Pelican site
