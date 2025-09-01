@@ -2,7 +2,7 @@ AUTHOR = 'Jesus Lemus'
 SITENAME = "Jesus Lemus"
 SITETITLE = "Jesus Lemus - Platform Engineer"
 SITESUBTITLE = "Platform Engineer"
-SITEDESCRIPTION = "A blog about technology and more."
+SITEDESCRIPTION = "Thoughts on technology, life, and everything in between."
 # Thoughts on developer platforms, cloud native, and engineering efficiency.
 SITEURL = ""
 
