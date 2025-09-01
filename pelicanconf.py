@@ -1,0 +1,60 @@
+AUTHOR = 'Jesus Lemus'
+SITENAME = "Jesus Lemus"
+SITETITLE = "Jesus Lemus - Platform Engineer"
+SITESUBTITLE = "Platform Engineer"
+SITEDESCRIPTION = "Thoughts on technology, life, and everything in between."
+# Thoughts on developer platforms, cloud native, and engineering efficiency.
+SITEURL = ""
+
+PATH = "content"
+THEME = "themes/simple-dev"
+
+DEFAULT_LANG = "en"
+
+# Feed generation is usually desired
+FEED_ALL_ATOM = 'feeds/all.atom.xml'
+
+# Navigation menu
+MENUITEMS = (
+    ('Blog', '/blog/'),
+    # ('About', '/pages/about.html'),
+    # ('Projects', '/pages/projects.html'),
+)
+
+# Social widget
+GITHUB_USERNAME = 'jesuslemusco'
+SOCIAL = (
+    ('LinkedIn', 'https://linkedin.com/in/jesuslemusco/'),
+    ('GitHub', f'https://github.com/{GITHUB_USERNAME}'),
+)
+
+GOOGLE_ANALYTICS_ID = 'G-GGVP2VDZNY'
+
+# Tell Pelican to use a page for the homepage and move the article list 
+INDEX_SAVE_AS = '/blog/index.html' # /themes/simple-dev/templates/index.html
+
+# URL settings for articles to match content directory structure.
+PATH_METADATA = r'(?P<year>\d{4})/(?P<month>\d{2})/.*'
+ARTICLE_URL = '{year}/{month}/{slug}.html'
+ARTICLE_SAVE_AS = '{year}/{month}/{slug}.html'
+
+# URL settings for static pages
+PAGE_URL = '{slug}.html'
+PAGE_SAVE_AS = './{slug}.html'
+
+DEFAULT_PAGINATION = 6
+
+# Markdown settings for code highlighting
+MARKDOWN = {
+    'extension_configs': {
+        'markdown.extensions.codehilite': {'css_class': 'highlight'},
+        'markdown.extensions.extra': {},
+        'markdown.extensions.meta': {},
+    },
+    'output_format': 'html5',
+}
+
+STATIC_PATHS = ['images']
+
+# Uncomment following line if you want document-relative URLs when developing
+#RELATIVE_URLS = True

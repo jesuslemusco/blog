@@ -1,0 +1,13 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "My personal website and blog",
+  "scripts": {
+    "build:css": "tailwindcss -i ./themes/simple-dev/static/css/main.css -o ./themes/simple-dev/static/css/style.css --minify",
+    "build": "npm run build:css && pelican content -o output -s publishconf.py"
+  },
+  "author": "Jesus Lemus",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}

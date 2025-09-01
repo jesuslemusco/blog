@@ -1,0 +1,16 @@
+name: CI
+
+on:
+  # Runs on pull requests targeting the main branch
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup and Build
+        uses: ./.github/actions/setup-and-build
