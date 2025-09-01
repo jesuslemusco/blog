@@ -32,7 +32,7 @@ SOCIAL = (
 GOOGLE_ANALYTICS_ID = 'G-GGVP2VDZNY'
 
 # Tell Pelican to use a page for the homepage and move the article list 
-INDEX_SAVE_AS = 'blog.html' # /themes/simple-dev/templates/index.html
+INDEX_SAVE_AS = '/blog/index.html' # /themes/simple-dev/templates/index.html
 
 # URL settings for articles to match content directory structure.
 PATH_METADATA = r'(?P<year>\d{4})/(?P<month>\d{2})/.*'

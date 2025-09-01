@@ -8,19 +8,22 @@ tools:
 
 
 ## Set environment
-
 ```
-npm install tailwindcss @tailwindcss/cli
 pip install -r requirements.txt
+npm install
 ```
 
 ## generate site steps
 
-Open in each in different cli tap to run locally.
+```
+npm run build
 
+pelican --listen
 ```
-npx @tailwindcss/cli -i themes/simple-dev/static/css/main.css -o themes/simple-dev/static/css/style.css --watch
-make regenerate
-pelican --listen 
-```
+
+view site on -> http://localhost:8000/
+
+
+
+
 
