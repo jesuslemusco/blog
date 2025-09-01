@@ -7,9 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{{ SITETITLE|default(SITENAME)|striptags }}{% endblock title %}</title>
 
-    <!-- Tailwind CSS TODO: Remove this in later -->
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,7 +15,9 @@
     <!-- Main CSS -->
     <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/style.css" />
     <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/pygments.css" />
-    
+
+    <!-- Favicon -->
+    <link rel="icon" href="{{ SITEURL }}/images/favicon.svg" type="image/x-icon" />
 
     {% if FEED_ALL_ATOM %}
     <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom Feed" />
