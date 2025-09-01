@@ -1,0 +1,28 @@
+name: 'Setup and Build'
+description: 'Sets up Python and Node.js, installs dependencies, and builds the static site.'
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+
+    - name: Install dependencies
+      shell: bash
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        npm install
+
+    - name: Build site
+      shell: bash
+      run: npm run build
+
