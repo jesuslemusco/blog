@@ -24,7 +24,6 @@ MENUITEMS = (
 # Social widget
 GITHUB_USERNAME = 'jesuslemusco'
 SOCIAL = (
-    ('LinkedIn', 'https://linkedin.com/in/jesuslemusco/'),
     ('GitHub', f'https://github.com/{GITHUB_USERNAME}'),
 )
 
