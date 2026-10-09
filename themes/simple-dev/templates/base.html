@@ -40,7 +40,7 @@
     </script>
     {% endblock head %}
 </head>
-<body class="antialiased">
+<body class="antialiased min-h-screen flex flex-col">
 {% block body %}
     <!-- Header -->
     <header class="relative w-full">
@@ -85,14 +85,11 @@
     </header>
 
 
-    <main>
+    <main class="flex-grow">
     {% block content %}
     {% endblock content %}
     </main>
-    <script src="{{ SITEURL }}/theme/js/main.js"></script>
 {% endblock body %}
-</body>
-<footer>
     {% block footer %}
     <footer class="border-t border-custom">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -119,5 +116,6 @@
         </div>
     </footer>
     {% endblock %}
-</footer>
+    <script src="{{ SITEURL }}/theme/js/main.js"></script>
+</body>
 </html>
